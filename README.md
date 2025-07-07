@@ -15,6 +15,38 @@ A command-line tool to count tokens in text files using OpenAI's tiktoken librar
 
 ## Installation
 
+### Using uvx without installation
+
+Use `uvx --from "git+https://github.com/angch/tiktokei@main" tiktokei`
+
+Example:
+
+```bash
+ % uvx --from "git+https://github.com/angch/tiktokei@main" tiktokei .
+ Updated https://github.com/angch/tiktokei (de4b857)
+   Built tiktokei @ git+https://github.com/angch/tiktokei@de4b8577316e26d98172ba1c06ebcbff9b434df9
+Installed 8 packages in 14ms
+Directory: /Users/angch/build/tiktokei
+Encoding used: cl100k_base
+
+================================================================================
+ Language            Files        Lines       Tokens        Bytes
+================================================================================
+ Python                 98      47,708     449,945   1,541,083
+ Other                  65       8,990     267,744     530,319
+ Text                    9         239       2,613      12,853
+ Markdown                2         213       1,416       6,066
+ Shell                   1         124       1,075       4,180
+ JavaScript              1         110         840       3,655
+ PowerShell              1          82         675       2,762
+ TOML                    1          74         558       1,831
+ Config                  1           6          54         177
+ JSON                    1           1          23          73
+--------------------------------------------------------------------------------
+ Total                 180      57,547     724,943   2,102,999
+================================================================================
+```
+
 ### Using uv (recommended)
 
 ```bash
